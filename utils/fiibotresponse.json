@@ -1,0 +1,162 @@
+{
+    "list": {
+        "nolist": "*❎〡Group doesnt have a menu yet*",
+        "listinpc": "*❎〡The command is list (for shop)*",
+        "txtaddlist": "*✅〡Add product to menu list*",
+        "nodellist": "️*❎〡Keyword not found*",
+        "succdellist": "*🚮〡Removed product from menu list*",
+        "noupdlist": "*❎〡Keyword not found*",
+        "succupdlist": "*✅〡Updating product menu*",
+        "noresetlist": "*❎〡Group doesnt have a menu yet*",
+        "succresetlist": "*🔄〡Successfully reset menu list*",
+        "norename": "*❎〡Keyword not found*",
+        "succrename": "*✅〡Successfully change keyword*"
+    },
+    
+    "resusgpause": "{ s }   =  seconds - detik\n{ m }   =  minutes - menit\n{ h }   =  hours - jam\n{ d }   =  days - hari",
+    "resusgcalculator": "{+} => +\n{-} => -\n{÷} => /\n{×} => *",
+    "notimebreak": "*❎〡With time*",
+    "usingspace": "**️⃣〡Using space*",
+
+    "order": {
+        "avlsetproses": "*❎〡Process has been set*",
+        "succsetproses": "*✅〡Successfully set process*",
+        "succupdproses": "*✅〡Successfully updated set process*",
+        "nogetproses": "**️⃣〡Default process text*",
+        "noresetproses": "**️⃣〡Default process text*",
+        "succresetproses": "*🔄〡Successfully reset process*",
+        "avlsetdone": "*❎〡Done has been set*",
+        "succsetdone": "*✅〡Successfully set done*",
+        "succupddone": "*✅〡Successfully updated set done*",
+        "nogetdone": "**️⃣〡Default done text*",
+        "noresetdone": "**️⃣〡Default done text*",
+        "succresetproses": "*🔄〡Successfully reset done*"
+    },
+    
+    "setbot": {
+        "avlsetbot": "*❎〡Fiibot response has been set*",
+        "succsetbot": "*✅〡Successfully set fiibot response*",
+        "succupdsetbot": "*✅〡Successfully update fiibot response*",
+        "noresetbot": "**️⃣〡Default fiibot response*",
+        "succresetbot": "*🔄〡Successfully reset fiibot response*"
+    },
+        
+    "add": {
+        "max": "*❎〡Group reaches maximum participants*",
+        "notcode": "**️⃣〡Using Code 62*",
+        "invalid": "❎〡Enter valid number*",
+        "inhere": "❎〡User in this group*",
+        "notregist": "*❎〡Number not registered on whatsapp*"
+    },
+    
+    "txtgetlink": "**️⃣〡With Group ID*",
+    
+    "rental": {
+        "notimerent": "**️⃣〡Time ?*",
+        "isrented": "*❎〡Fiibot already rented*",
+        "succrent": "*✅〡Rental success*",
+        "loadingrtime": "**️⃣〡Checking...*",
+        "succaddtime": "*✅〡Success adding time*",
+        "norent": "*❎〡Fiibot isnt rented in this group*",
+        "succstoprent": "*✅〡Successfully stopped rental*"
+    },
+    
+    "setgc": {
+        "succpicgc": "*✅〡Successfully changed group icon*",
+        "succsubgc": "*✅〡Successfully changed group name*",
+        "succdesgc": "*✅〡Successfully changed group description*",
+        "succchangelink": "*✅〡Successfully changed group link*"
+    },
+    
+    "deletechat": {
+        "noreplydelete": "**️⃣〡Reply to fiibot chat, to delete a message*",
+        "replyme": "*❎〡Only delete messages from fiibot*"
+    },
+    
+    "antilink": {
+        "avlantilink": "*❎〡Antilink is active*",
+        "succantilink": "*✅〡Successfully activated antilink*",
+        "avloffantilink": "*❎〡Antilink is disabled*",
+        "succoffantilink": "*✅〡Successfully disable antilink*",
+        "avlantilinkall": "*❎〡Anti all links is active*",
+        "succantilinkall": "*✅〡Successfully activated antilink all*",
+        "avloffantilinkall": "*❎〡Anti all links is disabled*",
+        "succoffantilinkall": "*✅〡Successfully disable antilink all*",
+        "avlantiwame": "*❎〡Antiwame is active*",
+        "succantiwame": "*✅〡Successfully activated antiwame*",
+        "avloffantiwame": "*❎〡Antiwame is disabled*",
+        "succoffantiwame": "*✅〡Successfully disable antiwame*",
+        "avlantivirtext": "*❎〡Antivirtext is active*",
+        "succantivirtext": "*✅〡Successfully activated antivirtext*",
+        "avloffantivirtext": "*❎〡Antivirtext is disabled*",
+        "succoffantivirtext": "*✅〡Successfully disable antivirtext*"
+    },
+    
+    "open": {
+        "avlsetopen": "*❎〡Open has been set*",
+        "succsetopen": "*✅〡Successfully set open*",
+        "succupdopen": "*✅〡Successfully update set open*",
+        "nogetopen": "**️⃣〡Default open text*",
+        "nosetopen": "**️⃣〡Default open text*",
+        "succresetopen": "*🔄〡Successfully reset open*"
+    },
+    
+    "close": {
+        "avlsetclose": "*❎〡Close has been set*",
+        "succsetclose": "*✅〡Successfully set close*",
+        "succupdclose": "*✅〡Successfully update set close*",
+        "nogetclose": "**️⃣〡Default close text*",
+        "nosetclose": "**️⃣〡Default close text*",
+        "succresetclose": "*🔄〡Successfully reset close*"
+    },
+    
+    "welcome": {
+        "avlwelcome": "*❎〡Welcome message is active*",
+        "succwelcome": "*✅〡Successfully activate welcome message*",
+        "avloffwelcome": "*❎〡Welcome message is disabled*",
+        "succoffwelcome": "*✅〡Successfully deactivate welcome message*",
+        "avlsetwelcome": "*❎〡Welcome has been set*",
+        "succsetwelcome": "*✅〡Successfully set welcome message*",
+        "succupdwelcome": "*✅〡Successfully update welcome message*",
+        "nogetwelcome": "**️⃣〡Default welcome text*",
+        "nosetwelcome": "**️⃣〡Default welcome text*",
+        "succresetwelcome" : "*🔄〡Successfully reset welcome message*"
+    },
+    
+    "leave": {
+        "avlleave": "*❎〡Leave message is active*",
+        "succleave": "*✅〡Successfully activate leave message*",
+        "avloffleave": "*❎〡Leave message is disabled*",
+        "succoffleave": "*✅〡Successfully deactivate leave message*",
+        "avlsetleave": "*❎〡Leave has been set*",
+        "succsetleave": "*✅〡Successfully set leave message*",
+        "succupdleave": "*✅〡Successfully update leave message*",
+        "nogetleave": "**️⃣〡Default leave text*",
+        "nosetleave": "**️⃣〡Default leave text*",
+        "succresetleave": "*🔄〡Successfully reset leave message*"
+    },
+    
+    "convert": {
+        "converttosticker": "**️⃣〡Send or reply, to image or video(≤13s)*",
+        "converttourl": "**️⃣〡Send or reply to image*",
+        "converttoimg": "**️⃣〡Reply to sticker*",
+        "converttoaudio": "**️⃣〡Send or reply to video*"
+    },
+    
+    "sticker": {
+        "textlong": "*❎〡Text too long*",
+        "noemoji": "*❎〡Its not an emoji*",
+        "succexif": "*✅〡Successfully set watermark*"
+    },
+    
+    "notnumber": "*❎〡Only use numbers*",
+    "succpichome": "*✅〡Successfully set image*",
+    "succsentgcprivate": "*✅〡Successfully sent to private group*",
+    
+    "spamto": {
+        "noat": "**️⃣〡Where to send?*",
+        "spamnocode": "**️⃣〡Using code 62*",
+        "noplus": "*❎〡Without plus*",
+        "succspamto": "*✅〡Spam successfully*"
+    }
+}

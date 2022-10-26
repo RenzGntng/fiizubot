@@ -1,0 +1,81 @@
+const fs = require('fs');
+
+let _ratings = JSON.parse(fs.readFileSync('./database/fiibotratings.json'));
+let _raters = JSON.parse(fs.readFileSync('./database/fiibotrater.json'));
+let one_star = JSON.parse(fs.readFileSync('./database/fiibotratingsOne.json'));
+let two_stars = JSON.parse(fs.readFileSync('./database/fiibotratingsTwo.json'));
+let three_stars = JSON.parse(fs.readFileSync('./database/fiibotratingsThree.json'));
+let four_stars = JSON.parse(fs.readFileSync('./database/fiibotratingsFour.json'));
+let five_stars = JSON.parse(fs.readFileSync('./database/fiibotratingsFive.json'));
+
+    function FiibotRater(fiibot_stars, sender, rting) {
+        var fiibotratings = null
+            var pos = null
+            Object.keys(rting).forEach((i) => {
+                if (rting[i].rater === sender) {
+                    fiibotratings = i
+                }
+            })
+            if (fiibotratings === null) {
+                rting.push({rater: sender, value: [{fiibot_stars: fiibot_stars, total_rating: 0}]})
+                fs.writeFileSync('./database/fiibotrater.json', JSON.stringify(rting, null, 2));
+                Object.keys(rting).forEach((i) => {
+                    if (rting[i].rater === sender) {
+                        fiibotratings = i
+                    }
+                })
+            }
+            if (fiibotratings !== null) {
+                Object.keys(rting[fiibotratings].value).forEach((i) => {
+                    if (rting[fiibotratings].value[i].fiibot_stars === fiibot_stars) {
+                        pos = i
+                    }
+                })
+                if (pos === null) {
+                    rting[fiibotratings].value.push({fiibot_stars: fiibot_stars, total_rating: 1})
+                    fs.writeFileSync('./database/fiibotrater.json', JSON.stringify(rting, null, 2));
+                } else {
+                    rting[fiibotratings].value[pos].total_rating += 1
+                    fs.writeFileSync('./database/fiibotrater.json', JSON.stringify(rting, null, 2));
+                }
+            }
+        }
+
+    function FiibotRatings(fiibot_stars, sender, _stars) {
+        FiibotRater(fiibot_stars, sender, _raters)
+            var fiibotratings = null
+            Object.keys(_stars).forEach((i) => {
+                if (_stars[i].fiibot_stars === fiibot_stars) {
+                   fiibotratings = i
+                }
+            })
+            if (fiibotratings === null) {
+                _stars.push({fiibot_stars: fiibot_stars, total_rating: 1})
+                fs.writeFileSync('./database/fiibotratings.json',JSON.stringify(_stars, null, 2));
+            } else {
+                _stars[fiibotratings].total_rating += 1
+                fs.writeFileSync('./database/fiibotratings.json',JSON.stringify(_stars, null, 2));
+            }
+        }
+        
+        function FiibotRatingsOne(fiibot_stars, sender, one_star) {
+            var fiibotratings = null
+            Object.keys(one_star).forEach((i) => {
+                if (one_star[i].fiibot_stars === fiibot_stars) {
+                   fiibotratings = i
+                }
+            })
+            if (fiibotratings === null) {
+                one_star.push({fiibot_stars: fiibot_stars, total_rating: 1})
+                fs.writeFileSync('./database/fiibotratingsOne.json',JSON.stringify(one_star, null, 2));
+            } else {
+                one_star[fiibotratings].total_rating += 1
+                fs.writeFileSync('./database/fiibotratingsOne.json',JSON.stringify(one_star, null, 2));
+            }
+        }
+        
+module.exports = {
+FiibotRater,
+FiibotRatings,
+FiibotRatingsOne
+}

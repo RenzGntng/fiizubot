@@ -1,0 +1,16 @@
+{
+    "wait": "*⏳〡Please wait...*",
+    "error": {
+        "Iv": "*⛔〡Invalid link*",
+        "api": "*⛔〡There is an error*"
+    },
+    "NoReply": "**️⃣〡Reply to chat*",
+    "GroupPricelist": "*❎〡Shop feature is disable in this group*",
+    "OnlyGroup": "*❎〡Features for group*",
+    "GroupMode": "*❎〡Sorry, I dont serve feature in private chat*",
+    "OnlyPc": "*❎〡Features for privchat*",
+    "GroupAdmin": "*❎〡Only for admins*",
+    "BotAdmin": "*❎〡Fiibot is not an admin*",
+    "OnlyOwner": "*❎〡Only for owner*",
+    "OnlyPrem": "*❎〡Only for premium*"
+}
